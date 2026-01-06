@@ -4,7 +4,7 @@ VoltRail Dynamics is a full-stack industrial logistics platform designed to mana
 
 
 
-## 🚀 Key Features
+##  Key Features
 
 * **Asynchronous Optimization**: Trigger complex induction algorithms via a non-blocking Job Queue (UUID-tracked).
 * **Real-time Telemetry**: Monitoring of mileage, delay status, and stabling bay logistics.
@@ -14,7 +14,7 @@ VoltRail Dynamics is a full-stack industrial logistics platform designed to mana
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 | :--- | :--- |
@@ -25,7 +25,7 @@ VoltRail Dynamics is a full-stack industrial logistics platform designed to mana
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 The system is built on the **Separation of Concerns** principle:
 
@@ -34,12 +34,12 @@ The system is built on the **Separation of Concerns** principle:
 3.  **The Controller (API) Layer**: Purely RESTful endpoints returning standardized JSON responses.
 4.  **The Frontend Hook**: A polling mechanism that tracks the lifecycle of an optimization job from `PENDING` to `SUCCESS`.
 
----
 
-## 🚦 Getting Started
+
+##  Getting Started
 
 ### 1. Backend Setup
-```bash
+bash
 cd backend
 pip install flask flask-cors
 python app.py
