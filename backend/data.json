@@ -1,0 +1,16 @@
+# save_data_json.py
+import json
+from data import generate_hybrid_fleet
+from dataclasses import asdict
+
+# Generate fleet
+fleet = generate_hybrid_fleet(n_trainsets=25, n_bays=12)
+
+# Convert each Trainset object to dictionary
+fleet_dicts = [asdict(ts) for ts in fleet]
+
+# Save to JSON
+with open("data.json", "w") as f:
+    json.dump(fleet_dicts, f, indent=4)
+
+print("✅ data.json created with", len(fleet_dicts), "trainsets")

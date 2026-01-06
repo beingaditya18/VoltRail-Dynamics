@@ -1,0 +1,5 @@
+flask
+pandas
+pulp
+shap
+scikit-learn
